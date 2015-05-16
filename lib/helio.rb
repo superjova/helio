@@ -13,3 +13,5 @@ module Helio
     require 'helio/engine'
   end
 end
+
+Helio.load!
