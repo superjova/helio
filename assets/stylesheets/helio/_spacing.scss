@@ -1,0 +1,36 @@
+$spaces = 1px, 5px, 7.5px, 10px, 15px, 20px, 30px, 40px, 50px, 60px, 80px, 100px;
+
+.mha {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+prepend($spaces, 0px);
+@for $index from 0 through (length($spaces) - 1) {
+  $space: nth($spaces, $index);
+
+  .pt-#{$index} .pv-#{$index} .pa-#{$index} {
+    padding-top: $space;
+  }
+  .pl-#{$index} .ph-#{$index} .pa-#{$index} {
+    padding-left: $space;
+  }
+  .pb-#{$index} .pv-#{$index} .pa-#{$index} {
+    padding-bottom: $space;
+  }
+  .pr-#{$index} .ph-#{$index} .pa-#{$index} {
+    padding-right: $space;
+  }
+  .mt-#{$index} .mv-#{$index} .ma-#{$index} {
+    margin-top: $space;
+  }
+  .ml-#{$index} .mh-#{$index} .ma-#{$index} {
+    margin-left: $space;
+  }
+  .mb-#{$index} .mv-#{$index} .ma-#{$index} {
+    margin-bottom: $space;
+  }
+  .mr-#{$index} .mh-#{$index} .ma-#{$index} {
+    margin-right: $space;
+  }
+}
