@@ -5,12 +5,12 @@ module Helio
     def load!
       register_rails_engine
     end
-  end
 
-  private
+    private
 
-  def register_rails_engine
-    require 'helio/engine'
+    def register_rails_engine
+      require 'helio/engine'
+    end
   end
 end
 
