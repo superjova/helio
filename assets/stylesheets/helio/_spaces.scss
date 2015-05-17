@@ -1,0 +1,112 @@
+@mixin paddings($name, $value) {
+  .pt-#{$name} .pv-#{$name} .pa-#{$name}, .pt-#{$name}-plus + .pt-#{$name}-plus {
+    padding-top: $value;
+  }
+
+  .pl-#{$name} .ph-#{$name} .pa-#{$name}, .pl-#{$name}-plus + .pl-#{$name}-plus {
+    padding-left: $value;
+  }
+
+  .pb-#{$name} .pv-#{$name} .pa-#{$name}, .pb-#{$name}-plus + .pb-#{$name}-plus {
+    padding-bottom: $value;
+  }
+
+  .pr-#{$name} .ph-#{$name} .pa-#{$name}, .pr-#{$name}-plus + .pr-#{$name}-plus {
+    padding-right: $value;
+  }
+}
+
+@mixin margins($name, $value) {
+  .mt-#{$name} .mv-#{$name} .ma-#{$name}, .mt-#{$name}-plus + .mt-#{$name}-plus {
+    margin-top: $value;
+  }
+
+  .ml-#{$name} .mh-#{$name} .ma-#{$name}, .ml-#{$name}-plus + .ml-#{$name}-plus {
+    margin-left: $value;
+  }
+
+  .mb-#{$name} .mv-#{$name} .ma-#{$name}, .mb-#{$name}-plus + .mb-#{$name}-plus {
+    margin-bottom: $value;
+  }
+
+  .mr-#{$name} .mh-#{$name} .ma-#{$name}, .mr-#{$name}-plus + .mr-#{$name}-plus {
+    margin-right: $value;
+  }
+}
+
+@mixin negative-margins($name, $value) {
+  .nmt-#{$name} .nmv-#{$name} .nma-#{$name}, .nmt-#{$name}-plus + .nmt-#{$name}-plus {
+    margin-top: -$value;
+  }
+
+  .nml-#{$name} .nmh-#{$name} .nma-#{$name}, .nml-#{$name}-plus + .nml-#{$name}-plus {
+    margin-left: -$value;
+  }
+
+  .nmb-#{$name} .nmv-#{$name} .nma-#{$name}, .nmb-#{$name}-plus + .nmb-#{$name}-plus {
+    margin-bottom: -$value;
+  }
+
+  .nmr-#{$name} .nmh-#{$name} .nma-#{$name}, .nmr-#{$name}-plus + .nmr-#{$name}-plus {
+    margin-right: -$value;
+  }
+}
+
+@mixin dimensions($name, $value) {
+  .dv-#{$name}, .da-#{$name} {
+    height: $value;
+  }
+
+  .dh-#{$name}, .da-#{$name} {
+    width: $value;
+  }
+}
+
+@mixin line-heights($name, $value) {
+  .lh-#{$name} {
+    line-height: $value;
+  }
+}
+
+.mh-a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include dimensions(0, 0px);
+
+@for $space-index from 1 through length($helio-spaces) {
+  $space: nth($helio-spaces, $space-index);
+
+  @include dimensions($space-index, $space);
+}
+
+@include line-heights(0, 0px);
+
+@for $space-index from 1 through length($helio-spaces) {
+  $space: nth($helio-spaces, $space-index);
+
+  @include line-heights($space-index, $space);
+}
+
+@include paddings(0, 0px);
+
+@for $space-index from 1 through length($helio-spaces) {
+  $space: nth($helio-spaces, $space-index);
+
+  @include paddings($space-index, $space);
+}
+
+@include margins(0, 0px);
+
+@for $space-index from 1 through length($helio-spaces) {
+  $space: nth($helio-spaces, $space-index);
+
+  @include margins($space-index, $space);
+}
+
+@for $space-index from 1 through length($helio-spaces) {
+  $space: nth($helio-spaces, $space-index);
+
+  @include negative-margins($space-index, $space);
+}

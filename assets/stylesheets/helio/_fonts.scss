@@ -1,0 +1,15 @@
+@for $font-size-index from 1 through length($helio-font-sizes) {
+  $font-size: nth($helio-font-sizes, $font-size-index);
+
+  .fs-#{$font-size-index} {
+    font-size: $font-size;
+  }
+}
+
+@for $font-weight-index from 1 through length($helio-font-weights) {
+  $font-weight: nth($helio-font-weights, $font-weight-index);
+
+  .fw-#{$font-weight-index} {
+    font-weight: $font-weight;
+  }
+}

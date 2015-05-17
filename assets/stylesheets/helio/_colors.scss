@@ -1,0 +1,27 @@
+@mixin colors($name, $value) {
+  .c-#{$name}, .c-#{$name}-hover:hover, .active .c-#{$name}-active {
+    color: $value;
+  }
+
+  .bg-#{$name}, .bg-#{$name}-hover:hover, .active .bg-#{$name}-active {
+    background-color: $value;
+  }
+
+  .bc-#{$name}, .bc-#{$name}-hover:hover, .active .bc-#{$name}-active {
+    border-color: $value;
+  }
+}
+
+@include colors(n, none);
+
+@for $color-index from 1 through length($helio-shades) {
+  $color: nth($helio-shades, $color-index);
+
+  @include colors(#{$color-index - 1}, #{$color});
+}
+
+@for $color-index from 1 through length($helio-colors) {
+  $color: nth($helio-colors, $color-index);
+
+  @include colors(#{nth($color, 1)}, #{nth($color, 2)});
+}
