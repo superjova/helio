@@ -1,53 +1,53 @@
 @mixin paddings($name, $value) {
-  .pt-#{$name} .pv-#{$name} .pa-#{$name}, .pt-#{$name}-plus + .pt-#{$name}-plus {
+  .pt-#{$name}, .pv-#{$name}, .pa-#{$name}, .pt-#{$name}-plus + .pt-#{$name}-plus {
     padding-top: $value;
   }
 
-  .pl-#{$name} .ph-#{$name} .pa-#{$name}, .pl-#{$name}-plus + .pl-#{$name}-plus {
+  .pl-#{$name}, .ph-#{$name}, .pa-#{$name}, .pl-#{$name}-plus + .pl-#{$name}-plus {
     padding-left: $value;
   }
 
-  .pb-#{$name} .pv-#{$name} .pa-#{$name}, .pb-#{$name}-plus + .pb-#{$name}-plus {
+  .pb-#{$name}, .pv-#{$name}, .pa-#{$name}, .pb-#{$name}-plus + .pb-#{$name}-plus {
     padding-bottom: $value;
   }
 
-  .pr-#{$name} .ph-#{$name} .pa-#{$name}, .pr-#{$name}-plus + .pr-#{$name}-plus {
+  .pr-#{$name}, .ph-#{$name}, .pa-#{$name}, .pr-#{$name}-plus + .pr-#{$name}-plus {
     padding-right: $value;
   }
 }
 
 @mixin margins($name, $value) {
-  .mt-#{$name} .mv-#{$name} .ma-#{$name}, .mt-#{$name}-plus + .mt-#{$name}-plus {
+  .mt-#{$name}, .mv-#{$name}, .ma-#{$name}, .mt-#{$name}-plus + .mt-#{$name}-plus {
     margin-top: $value;
   }
 
-  .ml-#{$name} .mh-#{$name} .ma-#{$name}, .ml-#{$name}-plus + .ml-#{$name}-plus {
+  .ml-#{$name}, .mh-#{$name}, .ma-#{$name}, .ml-#{$name}-plus + .ml-#{$name}-plus {
     margin-left: $value;
   }
 
-  .mb-#{$name} .mv-#{$name} .ma-#{$name}, .mb-#{$name}-plus + .mb-#{$name}-plus {
+  .mb-#{$name}, .mv-#{$name}, .ma-#{$name}, .mb-#{$name}-plus + .mb-#{$name}-plus {
     margin-bottom: $value;
   }
 
-  .mr-#{$name} .mh-#{$name} .ma-#{$name}, .mr-#{$name}-plus + .mr-#{$name}-plus {
+  .mr-#{$name}, .mh-#{$name}, .ma-#{$name}, .mr-#{$name}-plus + .mr-#{$name}-plus {
     margin-right: $value;
   }
 }
 
 @mixin negative-margins($name, $value) {
-  .nmt-#{$name} .nmv-#{$name} .nma-#{$name}, .nmt-#{$name}-plus + .nmt-#{$name}-plus {
+  .nmt-#{$name}, .nmv-#{$name}, .nma-#{$name}, .nmt-#{$name}-plus + .nmt-#{$name}-plus {
     margin-top: -$value;
   }
 
-  .nml-#{$name} .nmh-#{$name} .nma-#{$name}, .nml-#{$name}-plus + .nml-#{$name}-plus {
+  .nml-#{$name}, .nmh-#{$name}, .nma-#{$name}, .nml-#{$name}-plus + .nml-#{$name}-plus {
     margin-left: -$value;
   }
 
-  .nmb-#{$name} .nmv-#{$name} .nma-#{$name}, .nmb-#{$name}-plus + .nmb-#{$name}-plus {
+  .nmb-#{$name}, .nmv-#{$name}, .nma-#{$name}, .nmb-#{$name}-plus + .nmb-#{$name}-plus {
     margin-bottom: -$value;
   }
 
-  .nmr-#{$name} .nmh-#{$name} .nma-#{$name}, .nmr-#{$name}-plus + .nmr-#{$name}-plus {
+  .nmr-#{$name}, .nmh-#{$name}, .nma-#{$name}, .nmr-#{$name}-plus + .nmr-#{$name}-plus {
     margin-right: -$value;
   }
 }
