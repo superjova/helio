@@ -68,11 +68,6 @@
   }
 }
 
-.mh-a {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @include dimensions(0, 0px);
 
 @for $space-index from 1 through length($helio-spaces) {
@@ -95,6 +90,11 @@
   $space: nth($helio-spaces, $space-index);
 
   @include paddings($space-index, $space);
+}
+
+.mh-a {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @include margins(0, 0px);
