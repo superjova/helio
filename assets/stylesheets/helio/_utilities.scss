@@ -1,0 +1,153 @@
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.z-4 {
+  z-index: 4;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.top {
+  top: 0px;
+}
+
+.left {
+  left: 0px;
+}
+
+.bottom {
+  bottom: 0px;
+}
+
+.right {
+  right: 0px;
+}
+
+.ntop {
+  top: 100%;
+}
+
+.nleft {
+  left: 100%;
+}
+
+.nbottom {
+  bottom: 100%;
+}
+
+.nright {
+  right: 100%;
+}
+
+.stc-xs {
+  position: static;
+}
+
+.rel-xs {
+  position: relative;
+}
+
+.abs-xs {
+  positon: absolute;
+}
+
+.fix-xs {
+  position: fixed;
+}
+
+.pull-left-xs {
+  float: left;
+}
+
+.pull-right-xs {
+  float: right;
+}
+
+@media (min-width: $screen-sm-min) {
+  .stc-sm {
+    position: static;
+  }
+
+  .rel-sm {
+    position: relative;
+  }
+
+  .abs-sm {
+    positon: absolute;
+  }
+
+  .fix-sm {
+    position: fixed;
+  }
+
+  .pull-left-sm {
+    float: left;
+  }
+
+  .pull-right-sm {
+    float: right;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .stc-md {
+    position: static;
+  }
+
+  .rel-md {
+    position: relative;
+  }
+
+  .abs-md {
+    positon: absolute;
+  }
+
+  .fix-md {
+    position: fixed;
+  }
+
+  .pull-left-md {
+    float: left;
+  }
+
+  .pull-right-md {
+    float: right;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .stc-lg {
+    position: static;
+  }
+
+  .rel-lg {
+    position: relative;
+  }
+
+  .abs-lg {
+    positon: absolute;
+  }
+
+  .fix-lg {
+    position: fixed;
+  }
+
+  .pull-left-lg {
+    float: left;
+  }
+
+  .pull-right-lg {
+    float: right;
+  }
+}
