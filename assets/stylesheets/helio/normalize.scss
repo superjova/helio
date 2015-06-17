@@ -11,9 +11,17 @@ body {
     text-decoration: none;
   }
 
+  a {
+    background-color: transparent;
+  }
+
   // Clear border stylings
   * {
     border-width: 0px;
     outline-width: 0px;
+  }
+
+  img {
+    border: 0;
   }
 }

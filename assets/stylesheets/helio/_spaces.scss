@@ -1,45 +1,45 @@
 @mixin paddings($name, $value) {
-  .pt-#{$name},
-  .pv-#{$name},
-  .pa-#{$name},
-  .pt-#{$name}-hover:hover,
-  .pv-#{$name}-hover:hover,
-  .pa-#{$name}-hover:hover,
-  .active .pt-#{$name}-active,
-  .active .pv-#{$name}-active,
-  .active .pa-#{$name}-active,
-  .pt-#{$name}-plus + .pt-#{$name}-plus {
+  .pt-#{$name}, .pt-xs-#{$name},
+  .pv-#{$name}, .pv-xs-#{$name},
+  .pa-#{$name}, .pa-xs-#{$name},
+  .pt-#{$name}-hover:hover, .pt-xs-#{$name}-hover:hover,
+  .pv-#{$name}-hover:hover, .pv-xs-#{$name}-hover:hover,
+  .pa-#{$name}-hover:hover, .pa-xs-#{$name}-hover:hover,
+  .active .pt-#{$name}-active, .active .pt-xs-#{$name}-active,
+  .active .pv-#{$name}-active, .active .pv-xs-#{$name}-active,
+  .active .pa-#{$name}-active, .active .pa-xs-#{$name}-active,
+  .pt-#{$name}-plus + .pt-#{$name}-plus, .pt-xs-#{$name}-plus + .pt-xs-#{$name}-plus {
     padding-top: $value;
   }
 
-  .pl-#{$name},
-  .ph-#{$name},
-  .pa-#{$name},
-  .pl-#{$name}-hover:hover,
-  .ph-#{$name}-hover:hover,
-  .pa-#{$name}-hover:hover,
-  .active .pl-#{$name}-active,
-  .active .ph-#{$name}-active,
-  .active .pa-#{$name}-active,
-  .pl-#{$name}-plus + .pl-#{$name}-plus {
+  .pl-#{$name}, .pl-xs-#{$name},
+  .ph-#{$name}, .ph-xs-#{$name},
+  .pa-#{$name}, .pa-xs-#{$name},
+  .pl-#{$name}-hover:hover, .pl-xs-#{$name}-hover:hover,
+  .ph-#{$name}-hover:hover, .ph-xs-#{$name}-hover:hover,
+  .pa-#{$name}-hover:hover, .pa-xs-#{$name}-hover:hover,
+  .active .pl-#{$name}-active, .active .pl-xs-#{$name}-active,
+  .active .ph-#{$name}-active, .active .ph-xs-#{$name}-active,
+  .active .pa-#{$name}-active, .active .pa-xs-#{$name}-active,
+  .pl-#{$name}-plus + .pl-#{$name}-plus, .pl-xs-#{$name}-plus + .pl-xs-#{$name}-plus {
     padding-left: $value;
   }
 
-  .pb-#{$name},
-  .pv-#{$name},
-  .pa-#{$name},
-  .pb-#{$name}-hover:hover,
-  .pv-#{$name}-hover:hover,
-  .pa-#{$name}-hover:hover,
-  .active .pb-#{$name}-active,
-  .active .pv-#{$name}-active,
-  .active .pa-#{$name}-active {
+  .pb-#{$name}, .pb-xs-#{$name},
+  .pv-#{$name}, .pv-xs-#{$name},
+  .pa-#{$name}, .pa-xs-#{$name},
+  .pb-#{$name}-hover:hover, .pb-xs-#{$name}-hover:hover,
+  .pv-#{$name}-hover:hover, .pv-xs-#{$name}-hover:hover,
+  .pa-#{$name}-hover:hover, .pa-xs-#{$name}-hover:hover,
+  .active .pb-#{$name}-active, .active .pb-xs-#{$name}-active,
+  .active .pv-#{$name}-active, .active .pv-xs-#{$name}-active,
+  .active .pa-#{$name}-active, .active .pa-xs-#{$name}-active {
     padding-bottom: $value;
   }
 
-  .pr-#{$name},
-  .ph-#{$name},
-  .pa-#{$name},
+  .pr-#{$name}, .pr-xs-#{$name},
+  .ph-#{$name}, .ph-xs-#{$name},
+  .pa-#{$name}, .pa-xs-#{$name},
   .pr-#{$name}-hover:hover,
   .ph-#{$name}-hover:hover,
   .pa-#{$name}-hover:hover,
