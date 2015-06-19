@@ -61,7 +61,7 @@
     .active .bwv-sm-#{$name}-active,
     .active .bwa-sm-#{$name}-active,
     .bwt-sm-#{$name}-plus + .bwt-sm-#{$name}-plus {
-      border-top-width: : $value;
+      border-top-width: $value;
     }
 
     .bwl-sm-#{$name},
@@ -114,7 +114,7 @@
     .active .bwv-md-#{$name}-active,
     .active .bwa-md-#{$name}-active,
     .bwt-md-#{$name}-plus + .bwt-md-#{$name}-plus {
-      border-top-width: : $value;
+      border-top-width: $value;
     }
 
     .bwl-md-#{$name},
@@ -167,7 +167,7 @@
     .active .bwv-lg-#{$name}-active,
     .active .bwa-lg-#{$name}-active,
     .bwt-lg-#{$name}-plus + .bwt-lg-#{$name}-plus {
-      border-top-width: : $value;
+      border-top-width: $value;
     }
 
     .bwl-lg-#{$name},
