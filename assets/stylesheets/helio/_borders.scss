@@ -9,7 +9,7 @@
   .active .bwv-#{$name}-active, .active .bwv-xs-#{$name}-active,
   .active .bwa-#{$name}-active, .active .bwa-xs-#{$name}-active,
   .bwt-#{$name}-plus + .bwt-#{$name}-plus, .bwt-xs-#{$name}-plus + .bwt-xs-#{$name}-plus {
-    border-width-top: $value;
+    border-top-width: $value;
   }
 
   .bwl-#{$name}, .bwl-xs-#{$name},
@@ -22,7 +22,7 @@
   .active .bwh-#{$name}-active, .active .bwh-xs-#{$name}-active,
   .active .bwa-#{$name}-active, .active .bwa-xs-#{$name}-active,
   .bwl-#{$name}-plus + .bwl-#{$name}-plus, .bwl-xs-#{$name}-plus + .bwl-xs-#{$name}-plus {
-    border-width-left: $value;
+    border-left-width: $value;
   }
 
   .bwb-#{$name}, .bwb-xs-#{$name},
@@ -34,7 +34,7 @@
   .active .bwb-#{$name}-active, .active .bwb-xs-#{$name}-active,
   .active .bwv-#{$name}-active, .active .bwv-xs-#{$name}-active,
   .active .bwa-#{$name}-active, .active .bwa-xs-#{$name}-active {
-    border-width-bottom: $value;
+    border-bottom-width: $value;
   }
 
   .bwr-#{$name}, .bwr-xs-#{$name},
@@ -47,7 +47,7 @@
   .active .bwh-#{$name}-active, .active .bwh-xs-#{$name}-active,
   .active .bwa-#{$name}-active, .active .bwa-xs-#{$name}-active,
   .bwr-#{$name}-plus + .bwr-#{$name}-plus, .bwr-xs-#{$name}-plus + .bwr-xs-#{$name}-plus {
-    border-width-right: $value;
+    border-right-width: $value;
   }
 
   @media (min-width: $screen-sm-min) {
@@ -61,7 +61,7 @@
     .active .bwv-sm-#{$name}-active,
     .active .bwa-sm-#{$name}-active,
     .bwt-sm-#{$name}-plus + .bwt-sm-#{$name}-plus {
-      border-width-top: $value;
+      border-top-width: : $value;
     }
 
     .bwl-sm-#{$name},
@@ -74,7 +74,7 @@
     .active .bwh-sm-#{$name}-active,
     .active .bwa-sm-#{$name}-active,
     .bwl-sm-#{$name}-plus + .bwl-sm-#{$name}-plus {
-      border-width-left: $value;
+      border-left-width: $value;
     }
 
     .bwb-sm-#{$name},
@@ -86,7 +86,7 @@
     .active .bwb-sm-#{$name}-active,
     .active .bwv-sm-#{$name}-active,
     .active .bwa-sm-#{$name}-active {
-      border-width-bottom: $value;
+      border-bottom-width: $value;
     }
 
     .bwr-sm-#{$name},
@@ -99,7 +99,7 @@
     .active .bwh-sm-#{$name}-active,
     .active .bwa-sm-#{$name}-active,
     .bwr-sm-#{$name}-plus + .bwr-sm-#{$name}-plus {
-      border-width-right: $value;
+      border-right-width: $value;
     }
   }
 
@@ -114,7 +114,7 @@
     .active .bwv-md-#{$name}-active,
     .active .bwa-md-#{$name}-active,
     .bwt-md-#{$name}-plus + .bwt-md-#{$name}-plus {
-      border-width-top: $value;
+      border-top-width: : $value;
     }
 
     .bwl-md-#{$name},
@@ -127,7 +127,7 @@
     .active .bwh-md-#{$name}-active,
     .active .bwa-md-#{$name}-active,
     .bwl-md-#{$name}-plus + .bwl-md-#{$name}-plus {
-      border-width-left: $value;
+      border-left-width: $value;
     }
 
     .bwb-md-#{$name},
@@ -139,7 +139,7 @@
     .active .bwb-md-#{$name}-active,
     .active .bwv-md-#{$name}-active,
     .active .bwa-md-#{$name}-active {
-      border-width-bottom: $value;
+      border-bottom-width: $value;
     }
 
     .bwr-md-#{$name},
@@ -152,7 +152,7 @@
     .active .bwh-md-#{$name}-active,
     .active .bwa-md-#{$name}-active,
     .bwr-md-#{$name}-plus + .bwr-md-#{$name}-plus {
-      border-width-right: $value;
+      border-right-width: $value;
     }
   }
 
@@ -167,7 +167,7 @@
     .active .bwv-lg-#{$name}-active,
     .active .bwa-lg-#{$name}-active,
     .bwt-lg-#{$name}-plus + .bwt-lg-#{$name}-plus {
-      border-width-top: $value;
+      border-top-width: : $value;
     }
 
     .bwl-lg-#{$name},
@@ -180,7 +180,7 @@
     .active .bwh-lg-#{$name}-active,
     .active .bwa-lg-#{$name}-active,
     .bwl-lg-#{$name}-plus + .bwl-lg-#{$name}-plus {
-      border-width-left: $value;
+      border-left-width: $value;
     }
 
     .bwb-lg-#{$name},
@@ -192,7 +192,7 @@
     .active .bwb-lg-#{$name}-active,
     .active .bwv-lg-#{$name}-active,
     .active .bwa-lg-#{$name}-active {
-      border-width-bottom: $value;
+      border-bottom-width: $value;
     }
 
     .bwr-lg-#{$name},
@@ -205,7 +205,7 @@
     .active .bwh-lg-#{$name}-active,
     .active .bwa-lg-#{$name}-active,
     .bwr-lg-#{$name}-plus + .bwr-lg-#{$name}-plus {
-      border-width-right: $value;
+      border-right-width: $value;
     }
   }
 }
@@ -297,7 +297,7 @@
 
 @include border-widths(0, 0px);
 @for $border-width-index from 1 through length($helio-border-widths) {
-  $name: $border-width-index - 1;
+  $name: $border-width-index;
   $value: nth($helio-border-widths, $border-width-index);
 
   @include border-widths(#{$name}, #{$value});
