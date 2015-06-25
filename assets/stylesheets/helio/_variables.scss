@@ -16,10 +16,11 @@ $helio-shades:                #000000,
                               #FFFFFF
                               !default;
 
-$helio-colors:          (red: #FF0000,
+$helio-colors:          (
+                         red: #FF0000,
                        green: #16DE7A,
-                        blue: #3A6EFC)
-                              !default;
+                        blue: #3A6EFC
+                        ) !default;
 
 $helio-spaces:                1px,
                               5px,
