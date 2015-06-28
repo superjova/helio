@@ -1,0 +1,15 @@
+{
+  "name": "superjova/helio",
+  "description": "helio",
+  "keywords": ["superjova", "helio", "sass"],
+  "homepage": "http://github.com/superjova/helio",
+  "authors": [
+    {
+      "name": "Paul Jovanovic"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/superjova/helio/issues"
+  },
+  "license": "MIT"
+}

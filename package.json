@@ -1,0 +1,25 @@
+{
+  "name": "helio-sass",
+  "version": "0.1.6",
+  "description": "helio",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/superjova/helio"
+  },
+  "keywords": [
+    "helio",
+    "sass",
+    "css"
+  ],
+  "contributors": [
+    "Paul Jovanovic"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superjova/helio/issues"
+  },
+  "devDependencies": {
+    "node-sass": "~2.0",
+    "mincer": "~1.2"
+  }
+}

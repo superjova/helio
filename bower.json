@@ -1,0 +1,28 @@
+{
+  "name": "helio-sass",
+  "homepage": "https://github.com/superjova/helio",
+  "authors": [
+    "Paul Jovanovic"
+  ],
+  "description": "helio",
+  "moduleType": "globals",
+  "main": [
+    "assets/stylesheets/_helio.scss"
+  ],
+  "keywords": [
+    "superjova",
+    "helio",
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "lib",
+    "tasks",
+    "templates",
+    "test",
+    "*.gemspec",
+    "Rakefile",
+    "Gemfile"
+  ]
+}
