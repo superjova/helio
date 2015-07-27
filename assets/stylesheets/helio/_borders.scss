@@ -211,69 +211,270 @@
 }
 
 @mixin border-radiuses($name, $value) {
-  .brtl-#{$name},
-  .brt-#{$name},
-  .brl-#{$name},
-  .bra-#{$name},
-  .brtl-#{$name}-hover:hover,
-  .brt-#{$name}-hover:hover,
-  .brl-#{$name}-hover:hover,
-  .bra-#{$name}-hover:hover,
-  .active .brtl-#{$name}-active,
-  .active .brt-#{$name}-active,
-  .active .brl-#{$name}-active,
-  .active .bra-#{$name}-active {
+  .brtl-#{$name}, .brtl-xs-#{$name},
+  .brt-#{$name}, .brt-xs-#{$name},
+  .brl-#{$name}, .brl-xs-#{$name},
+  .bra-#{$name}, .bra-xs-#{$name},
+  .brtl-#{$name}-hover:hover, .brtl-xs-#{$name}-hover:hover,
+  .brt-#{$name}-hover:hover, .brt-xs-#{$name}-hover:hover,
+  .brl-#{$name}-hover:hover, .brl-xs-#{$name}-hover:hover,
+  .bra-#{$name}-hover:hover, .bra-xs-#{$name}-hover:hover,
+  .active .brtl-#{$name}-active, .active .brtl-xs-#{$name}-active,
+  .active .brt-#{$name}-active, .active .brt-xs-#{$name}-active,
+  .active .brl-#{$name}-active, .active .brl-xs-#{$name}-active,
+  .active .bra-#{$name}-active, .active .bra-xs-#{$name}-active {
     -webkit-border-top-left-radius: $value;
     -moz-border-radius-topleft: $value;
     border-top-left-radius: $value;
   }
-  .brtr-#{$name},
-  .brt-#{$name},
-  .brr-#{$name},
-  .bra-#{$name},
-  .brtr-#{$name}-hover:hover,
-  .brt-#{$name}-hover:hover,
-  .brr-#{$name}-hover:hover,
-  .bra-#{$name}-hover:hover,
-  .active .brtr-#{$name}-active,
-  .active .brt-#{$name}-active,
-  .active .brr-#{$name}-active,
-  .active .bra-#{$name}-active {
+  .brtr-#{$name}, .brtr-xs-#{$name},
+  .brt-#{$name}, .brt-xs-#{$name},
+  .brr-#{$name}, .brr-xs-#{$name},
+  .bra-#{$name}, .bra-xs-#{$name},
+  .brtr-#{$name}-hover:hover, .brtr-xs-#{$name}-hover:hover,
+  .brt-#{$name}-hover:hover, .brt-xs-#{$name}-hover:hover,
+  .brr-#{$name}-hover:hover, .brr-xs-#{$name}-hover:hover,
+  .bra-#{$name}-hover:hover, .bra-xs-#{$name}-hover:hover,
+  .active .brtr-#{$name}-active, .active .brtr-xs-#{$name}-active,
+  .active .brt-#{$name}-active, .active .brt-xs-#{$name}-active,
+  .active .brr-#{$name}-active, .active .brr-xs-#{$name}-active,
+  .active .bra-#{$name}-active, .active .bra-xs-#{$name}-active {
     -webkit-border-top-right-radius: $value;
     -moz-border-radius-topright: $value;
     border-top-right-radius: $value;
   }
-  .brbl-#{$name},
-  .brb-#{$name},
-  .brl-#{$name},
-  .bra-#{$name},
-  .brbl-#{$name}-hover:hover,
-  .brb-#{$name}-hover:hover,
-  .brl-#{$name}-hover:hover,
-  .bra-#{$name}-hover:hover,
-  .active .brbl-#{$name}-active,
-  .active .brb-#{$name}-active,
-  .active .brl-#{$name}-active,
-  .active .bra-#{$name}-active {
+  .brbl-#{$name}, .brbl-xs-#{$name},
+  .brb-#{$name}, .brb-xs-#{$name},
+  .brl-#{$name}, .brl-xs-#{$name},
+  .bra-#{$name}, .bra-xs-#{$name},
+  .brbl-#{$name}-hover:hover, .brbl-xs-#{$name}-hover:hover,
+  .brb-#{$name}-hover:hover, .brb-xs-#{$name}-hover:hover,
+  .brl-#{$name}-hover:hover, .brl-xs-#{$name}-hover:hover,
+  .bra-#{$name}-hover:hover, .bra-xs-#{$name}-hover:hover,
+  .active .brbl-#{$name}-active, .active .brbl-xs-#{$name}-active,
+  .active .brb-#{$name}-active, .active .brb-xs-#{$name}-active,
+  .active .brl-#{$name}-active, .active .brl-xs-#{$name}-active,
+  .active .bra-#{$name}-active, .active .bra-xs-#{$name}-active {
     -webkit-border-bottom-left-radius: $value;
     -moz-border-radius-bottomleft: $value;
     border-bottom-left-radius: $value;
   }
-  .brbr-#{$name},
-  .brb-#{$name},
-  .brr-#{$name},
-  .bra-#{$name},
-  .brbr-#{$name}-hover:hover,
-  .brb-#{$name}-hover:hover,
-  .brr-#{$name}-hover:hover,
-  .bra-#{$name}-hover:hover,
-  .active .brbr-#{$name}-active,
-  .active .brb-#{$name}-active,
-  .active .brr-#{$name}-active,
-  .active .bra-#{$name}-active {
+  .brbr-#{$name}, .brbr-xs-#{$name},
+  .brb-#{$name}, .brb-xs-#{$name},
+  .brr-#{$name}, .brr-xs-#{$name},
+  .bra-#{$name}, .bra-xs-#{$name},
+  .brbr-#{$name}-hover:hover, .brbr-xs-#{$name}-hover:hover,
+  .brb-#{$name}-hover:hover, .brb-xs-#{$name}-hover:hover,
+  .brr-#{$name}-hover:hover, .brr-xs-#{$name}-hover:hover,
+  .bra-#{$name}-hover:hover, .bra-xs-#{$name}-hover:hover,
+  .active .brbr-#{$name}-active, .active .brbr-xs-#{$name}-active,
+  .active .brb-#{$name}-active, .active .brb-xs-#{$name}-active,
+  .active .brr-#{$name}-active, .active .brr-xs-#{$name}-active,
+  .active .bra-#{$name}-active, .active .bra-xs-#{$name}-active {
     -webkit-border-bottom-right-radius: $value;
     -moz-border-radius-bottomright: $value;
     border-bottom-right-radius: $value;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .brtl-sm-#{$name},
+    .brt-sm-#{$name},
+    .brl-sm-#{$name},
+    .bra-sm-#{$name},
+    .brtl-sm-#{$name}-hover:hover,
+    .brt-sm-#{$name}-hover:hover,
+    .brl-sm-#{$name}-hover:hover,
+    .bra-sm-#{$name}-hover:hover,
+    .active .brtl-sm-#{$name}-active,
+    .active .brt-sm-#{$name}-active,
+    .active .brl-sm-#{$name}-active,
+    .active .bra-sm-#{$name}-active {
+      -webkit-border-top-left-radius: $value;
+      -moz-border-radius-topleft: $value;
+      border-top-left-radius: $value;
+    }
+    .brtr-sm-#{$name},
+    .brt-sm-#{$name},
+    .brr-sm-#{$name},
+    .bra-sm-#{$name},
+    .brtr-sm-#{$name}-hover:hover,
+    .brt-sm-#{$name}-hover:hover,
+    .brr-sm-#{$name}-hover:hover,
+    .bra-sm-#{$name}-hover:hover,
+    .active .brtr-sm-#{$name}-active,
+    .active .brt-sm-#{$name}-active,
+    .active .brr-sm-#{$name}-active,
+    .active .bra-sm-#{$name}-active {
+      -webkit-border-top-right-radius: $value;
+      -moz-border-radius-topright: $value;
+      border-top-right-radius: $value;
+    }
+    .brbl-sm-#{$name},
+    .brb-sm-#{$name},
+    .brl-sm-#{$name},
+    .bra-sm-#{$name},
+    .brbl-sm-#{$name}-hover:hover,
+    .brb-sm-#{$name}-hover:hover,
+    .brl-sm-#{$name}-hover:hover,
+    .bra-sm-#{$name}-hover:hover,
+    .active .brbl-sm-#{$name}-active,
+    .active .brb-sm-#{$name}-active,
+    .active .brl-sm-#{$name}-active,
+    .active .bra-sm-#{$name}-active {
+      -webkit-border-bottom-left-radius: $value;
+      -moz-border-radius-bottomleft: $value;
+      border-bottom-left-radius: $value;
+    }
+    .brbr-sm-#{$name},
+    .brb-sm-#{$name},
+    .brr-sm-#{$name},
+    .bra-sm-#{$name},
+    .brbr-sm-#{$name}-hover:hover,
+    .brb-sm-#{$name}-hover:hover,
+    .brr-sm-#{$name}-hover:hover,
+    .bra-sm-#{$name}-hover:hover,
+    .active .brbr-sm-#{$name}-active,
+    .active .brb-sm-#{$name}-active,
+    .active .brr-sm-#{$name}-active,
+    .active .bra-sm-#{$name}-active {
+      -webkit-border-bottom-right-radius: $value;
+      -moz-border-radius-bottomright: $value;
+      border-bottom-right-radius: $value;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .brtl-md-#{$name},
+    .brt-md-#{$name},
+    .brl-md-#{$name},
+    .bra-md-#{$name},
+    .brtl-md-#{$name}-hover:hover,
+    .brt-md-#{$name}-hover:hover,
+    .brl-md-#{$name}-hover:hover,
+    .bra-md-#{$name}-hover:hover,
+    .active .brtl-md-#{$name}-active,
+    .active .brt-md-#{$name}-active,
+    .active .brl-md-#{$name}-active,
+    .active .bra-md-#{$name}-active {
+      -webkit-border-top-left-radius: $value;
+      -moz-border-radius-topleft: $value;
+      border-top-left-radius: $value;
+    }
+    .brtr-md-#{$name},
+    .brt-md-#{$name},
+    .brr-md-#{$name},
+    .bra-md-#{$name},
+    .brtr-md-#{$name}-hover:hover,
+    .brt-md-#{$name}-hover:hover,
+    .brr-md-#{$name}-hover:hover,
+    .bra-md-#{$name}-hover:hover,
+    .active .brtr-md-#{$name}-active,
+    .active .brt-md-#{$name}-active,
+    .active .brr-md-#{$name}-active,
+    .active .bra-md-#{$name}-active {
+      -webkit-border-top-right-radius: $value;
+      -moz-border-radius-topright: $value;
+      border-top-right-radius: $value;
+    }
+    .brbl-md-#{$name},
+    .brb-md-#{$name},
+    .brl-md-#{$name},
+    .bra-md-#{$name},
+    .brbl-md-#{$name}-hover:hover,
+    .brb-md-#{$name}-hover:hover,
+    .brl-md-#{$name}-hover:hover,
+    .bra-md-#{$name}-hover:hover,
+    .active .brbl-md-#{$name}-active,
+    .active .brb-md-#{$name}-active,
+    .active .brl-md-#{$name}-active,
+    .active .bra-md-#{$name}-active {
+      -webkit-border-bottom-left-radius: $value;
+      -moz-border-radius-bottomleft: $value;
+      border-bottom-left-radius: $value;
+    }
+    .brbr-md-#{$name},
+    .brb-md-#{$name},
+    .brr-md-#{$name},
+    .bra-md-#{$name},
+    .brbr-md-#{$name}-hover:hover,
+    .brb-md-#{$name}-hover:hover,
+    .brr-md-#{$name}-hover:hover,
+    .bra-md-#{$name}-hover:hover,
+    .active .brbr-md-#{$name}-active,
+    .active .brb-md-#{$name}-active,
+    .active .brr-md-#{$name}-active,
+    .active .bra-md-#{$name}-active {
+      -webkit-border-bottom-right-radius: $value;
+      -moz-border-radius-bottomright: $value;
+      border-bottom-right-radius: $value;
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    .brtl-lg-#{$name},
+    .brt-lg-#{$name},
+    .brl-lg-#{$name},
+    .bra-lg-#{$name},
+    .brtl-lg-#{$name}-hover:hover,
+    .brt-lg-#{$name}-hover:hover,
+    .brl-lg-#{$name}-hover:hover,
+    .bra-lg-#{$name}-hover:hover,
+    .active .brtl-lg-#{$name}-active,
+    .active .brt-lg-#{$name}-active,
+    .active .brl-lg-#{$name}-active,
+    .active .bra-lg-#{$name}-active {
+      -webkit-border-top-left-radius: $value;
+      -moz-border-radius-topleft: $value;
+      border-top-left-radius: $value;
+    }
+    .brtr-lg-#{$name},
+    .brt-lg-#{$name},
+    .brr-lg-#{$name},
+    .bra-lg-#{$name},
+    .brtr-lg-#{$name}-hover:hover,
+    .brt-lg-#{$name}-hover:hover,
+    .brr-lg-#{$name}-hover:hover,
+    .bra-lg-#{$name}-hover:hover,
+    .active .brtr-lg-#{$name}-active,
+    .active .brt-lg-#{$name}-active,
+    .active .brr-lg-#{$name}-active,
+    .active .bra-lg-#{$name}-active {
+      -webkit-border-top-right-radius: $value;
+      -moz-border-radius-topright: $value;
+      border-top-right-radius: $value;
+    }
+    .brbl-lg-#{$name},
+    .brb-lg-#{$name},
+    .brl-lg-#{$name},
+    .bra-lg-#{$name},
+    .brbl-lg-#{$name}-hover:hover,
+    .brb-lg-#{$name}-hover:hover,
+    .brl-lg-#{$name}-hover:hover,
+    .bra-lg-#{$name}-hover:hover,
+    .active .brbl-lg-#{$name}-active,
+    .active .brb-lg-#{$name}-active,
+    .active .brl-lg-#{$name}-active,
+    .active .bra-lg-#{$name}-active {
+      -webkit-border-bottom-left-radius: $value;
+      -moz-border-radius-bottomleft: $value;
+      border-bottom-left-radius: $value;
+    }
+    .brbr-lg-#{$name},
+    .brb-lg-#{$name},
+    .brr-lg-#{$name},
+    .bra-lg-#{$name},
+    .brbr-lg-#{$name}-hover:hover,
+    .brb-lg-#{$name}-hover:hover,
+    .brr-lg-#{$name}-hover:hover,
+    .bra-lg-#{$name}-hover:hover,
+    .active .brbr-lg-#{$name}-active,
+    .active .brb-lg-#{$name}-active,
+    .active .brr-lg-#{$name}-active,
+    .active .bra-lg-#{$name}-active {
+      -webkit-border-bottom-right-radius: $value;
+      -moz-border-radius-bottomright: $value;
+      border-bottom-right-radius: $value;
+    }
   }
 }
 
