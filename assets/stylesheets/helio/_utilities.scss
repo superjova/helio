@@ -100,6 +100,10 @@
   text-align: right;
 }
 
+.square-xs {
+  padding-bottom: 100%;
+}
+
 @media (min-width: $screen-sm-min) {
   .stc-sm {
     position: static;
@@ -131,6 +135,10 @@
 
   .text-sm-right {
     text-align: right;
+  }
+
+  .square-sm {
+    padding-bottom: 100%;
   }
 }
 
@@ -166,6 +174,10 @@
   .text-md-right {
     text-align: right;
   }
+
+  .square-md {
+    padding-bottom: 100%;
+  }
 }
 
 @media (min-width: $screen-lg-min) {
@@ -199,5 +211,9 @@
 
   .text-lg-right {
     text-align: right;
+  }
+
+  .square-lg {
+    padding-bottom: 100%;
   }
 }
