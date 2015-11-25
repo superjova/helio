@@ -425,55 +425,214 @@
 }
 
 @mixin negative-margins($name, $value) {
-  .nmt-#{$name},
-  .nmv-#{$name},
-  .nma-#{$name},
-  .nmt-#{$name}-hover:hover,
-  .nmv-#{$name}-hover:hover,
-  .nma-#{$name}-hover:hover,
-  .active .nmt-#{$name}-active,
-  .active .nmv-#{$name}-active,
-  .active .nma-#{$name}-active,
-  .nmt-#{$name}-plus + .nmt-#{$name}-plus {
+  .nmt-#{$name}, .nmt-xs-#{$name},
+  .nmv-#{$name}, .nmv-xs-#{$name},
+  .nma-#{$name}, .nma-xs-#{$name},
+  .nmt-#{$name}-hover:hover, .nmt-xs-#{$name}-hover:hover,
+  .nmv-#{$name}-hover:hover, .nmv-xs-#{$name}-hover:hover,
+  .nma-#{$name}-hover:hover, .nma-xs-#{$name}-hover:hover,
+  .active .nmt-#{$name}-active, .active .nmt-xs-#{$name}-active,
+  .active .nmv-#{$name}-active, .active .nmv-xs-#{$name}-active,
+  .active .nma-#{$name}-active, .active .nma-xs-#{$name}-active,
+  .nmt-#{$name}-plus + .nmt-#{$name}-plus, .nmt-xs-#{$name}-plus + .nmt-xs-#{$name}-plus {
     margin-top: -$value;
   }
 
-  .nml-#{$name},
-  .nmh-#{$name},
-  .nma-#{$name},
-  .nml-#{$name}-hover:hover,
-  .nmh-#{$name}-hover:hover,
-  .nma-#{$name}-hover:hover,
-  .active .nml-#{$name}-active,
-  .active .nmh-#{$name}-active,
-  .active .nma-#{$name}-active,
-  .nml-#{$name}-plus + .nml-#{$name}-plus {
+  .nml-#{$name}, .nml-xs-#{name},
+  .nmh-#{$name}, .nmh-xs-#{$name},
+  .nma-#{$name}, .nma-xs-#{$name},
+  .nml-#{$name}-hover:hover, .nml-xs-#{$name}-hover:hover,
+  .nmh-#{$name}-hover:hover, .nmh-xs-#{$name}-hover:hover,
+  .nma-#{$name}-hover:hover, .nma-xs-#{$name}-hover:hover,
+  .active .nml-#{$name}-active, .active .nml-xs-#{$name}-active,
+  .active .nmh-#{$name}-active, .active .nmh-xs-#{$name}-active,
+  .active .nma-#{$name}-active, .active .nma-xs-#{$name}-active,
+  .nml-#{$name}-plus + .nml-#{$name}-plus, .nml-xs-#{$name}-plus + .nml-xs-#{$name}-plus {
     margin-left: -$value;
   }
 
-  .nmb-#{$name},
-  .nmv-#{$name},
-  .nma-#{$name},
-  .nmb-#{$name}-hover:hover,
-  .nmv-#{$name}-hover:hover,
-  .nma-#{$name}-hover:hover,
-  .active .nmb-#{$name}-active,
-  .active .nmv-#{$name}-active,
-  .active .nma-#{$name}-active {
+  .nmb-#{$name}, .nmb-xs-#{$name},
+  .nmv-#{$name}, .nmv-xs-#{$name},
+  .nma-#{$name}, .nma-xs-#{$name},
+  .nmb-#{$name}-hover:hover, .nmb-xs-#{$name}-hover:hover,
+  .nmv-#{$name}-hover:hover, .nmv-xs-#{$name}-hover:hover,
+  .nma-#{$name}-hover:hover, .nma-xs-#{$name}-hover:hover,
+  .active .nmb-#{$name}-active, .active .nmb-xs-#{$name}-active,
+  .active .nmv-#{$name}-active, .active .nmv-xs-#{$name}-active,
+  .active .nma-#{$name}-active, .active .nma-xs-#{$name}-active, {
     margin-bottom: -$value;
   }
 
-  .nmr-#{$name},
-  .nmh-#{$name},
-  .nma-#{$name},
-  .nmr-#{$name}-hover:hover,
-  .nmh-#{$name}-hover:hover,
-  .nma-#{$name}-hover:hover,
-  .active .nmr-#{$name}-active,
-  .active .nmh-#{$name}-active,
-  .active .nma-#{$name}-active,
-  .nmr-#{$name}-plus + .mmr-#{$name}-plus {
+  .nmr-#{$name}, .nmr-xs-#{$name},
+  .nmh-#{$name}, .nmh-xs-#{$name},
+  .nma-#{$name}, .nma-xs-#{$name},
+  .nmr-#{$name}-hover:hover, .nmr-xs-#{$name}-hover:hover,
+  .nmh-#{$name}-hover:hover, .nmh-xs-#{$name}-hover:hover,
+  .nma-#{$name}-hover:hover, .nma-xs-#{$name}-hover:hover,
+  .active .nmr-#{$name}-active, .active .nmr-xs-#{$name}-active,
+  .active .nmh-#{$name}-active, .active .nmh-xs-#{$name}-active,
+  .active .nma-#{$name}-active, .active .nma-xs-#{$name}-active,
+  .nmr-#{$name}-plus + .nmr-#{$name}-plus, .nmr-xs-#{$name}-plus + .nmr-xs-#{$name}-plus {
     margin-right: -$value;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .nmt-sm-#{$name},
+    .nmv-sm-#{$name},
+    .nma-sm-#{$name},
+    .nmt-sm-#{$name}-hover:hover,
+    .nmv-sm-#{$name}-hover:hover,
+    .nma-sm-#{$name}-hover:hover,
+    .active .nmt-sm-#{$name}-active,
+    .active .nmv-sm-#{$name}-active,
+    .active .nma-sm-#{$name}-active,
+    .nmt-sm-#{$name}-plus + .nmt-sm-#{$name}-plus {
+      margin-top: -$value;
+    }
+
+    .nml-sm-#{name},
+    .nmh-sm-#{$name},
+    .nma-sm-#{$name},
+    .nml-sm-#{$name}-hover:hover,
+    .nmh-sm-#{$name}-hover:hover,
+    .nma-sm-#{$name}-hover:hover,
+    .active .nml-sm-#{$name}-active,
+    .active .nmh-sm-#{$name}-active,
+    .active .nma-sm-#{$name}-active,
+    .nml-sm-#{$name}-plus + .nml-sm-#{$name}-plus {
+      margin-left: -$value;
+    }
+
+    .nmb-sm-#{$name},
+    .nmv-sm-#{$name},
+    .nma-sm-#{$name},
+    .nmb-sm-#{$name}-hover:hover,
+    .nmv-sm-#{$name}-hover:hover,
+    .nma-sm-#{$name}-hover:hover,
+    .active .nmb-sm-#{$name}-active,
+    .active .nmv-sm-#{$name}-active,
+    .active .nma-sm-#{$name}-active, {
+      margin-bottom: -$value;
+    }
+
+    .nmr-sm-#{$name},
+    .nmh-sm-#{$name},
+    .nma-sm-#{$name},
+    .nmr-sm-#{$name}-hover:hover,
+    .nmh-sm-#{$name}-hover:hover,
+    .nma-sm-#{$name}-hover:hover,
+    .active .nmr-sm-#{$name}-active,
+    .active .nmh-sm-#{$name}-active,
+    .active .nma-sm-#{$name}-active,
+    .nmr-sm-#{$name}-plus + .nmr-sm-#{$name}-plus {
+      margin-right: -$value;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .nmt-md-#{$name},
+    .nmv-md-#{$name},
+    .nma-md-#{$name},
+    .nmt-md-#{$name}-hover:hover,
+    .nmv-md-#{$name}-hover:hover,
+    .nma-md-#{$name}-hover:hover,
+    .active .nmt-md-#{$name}-active,
+    .active .nmv-md-#{$name}-active,
+    .active .nma-md-#{$name}-active,
+    .nmt-md-#{$name}-plus + .nmt-md-#{$name}-plus {
+      margin-top: -$value;
+    }
+
+    .nml-md-#{name},
+    .nmh-md-#{$name},
+    .nma-md-#{$name},
+    .nml-md-#{$name}-hover:hover,
+    .nmh-md-#{$name}-hover:hover,
+    .nma-md-#{$name}-hover:hover,
+    .active .nml-md-#{$name}-active,
+    .active .nmh-md-#{$name}-active,
+    .active .nma-md-#{$name}-active,
+    .nml-md-#{$name}-plus + .nml-md-#{$name}-plus {
+      margin-left: -$value;
+    }
+
+    .nmb-md-#{$name},
+    .nmv-md-#{$name},
+    .nma-md-#{$name},
+    .nmb-md-#{$name}-hover:hover,
+    .nmv-md-#{$name}-hover:hover,
+    .nma-md-#{$name}-hover:hover,
+    .active .nmb-md-#{$name}-active,
+    .active .nmv-md-#{$name}-active,
+    .active .nma-md-#{$name}-active, {
+      margin-bottom: -$value;
+    }
+
+    .nmr-md-#{$name},
+    .nmh-md-#{$name},
+    .nma-md-#{$name},
+    .nmr-md-#{$name}-hover:hover,
+    .nmh-md-#{$name}-hover:hover,
+    .nma-md-#{$name}-hover:hover,
+    .active .nmr-md-#{$name}-active,
+    .active .nmh-md-#{$name}-active,
+    .active .nma-md-#{$name}-active,
+    .nmr-md-#{$name}-plus + .nmr-md-#{$name}-plus {
+      margin-right: -$value;
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    .nmt-lg-#{$name},
+    .nmv-lg-#{$name},
+    .nma-lg-#{$name},
+    .nmt-lg-#{$name}-hover:hover,
+    .nmv-lg-#{$name}-hover:hover,
+    .nma-lg-#{$name}-hover:hover,
+    .active .nmt-lg-#{$name}-active,
+    .active .nmv-lg-#{$name}-active,
+    .active .nma-lg-#{$name}-active,
+    .nmt-lg-#{$name}-plus + .nmt-lg-#{$name}-plus {
+      margin-top: -$value;
+    }
+
+    .nml-lg-#{name},
+    .nmh-lg-#{$name},
+    .nma-lg-#{$name},
+    .nml-lg-#{$name}-hover:hover,
+    .nmh-lg-#{$name}-hover:hover,
+    .nma-lg-#{$name}-hover:hover,
+    .active .nml-lg-#{$name}-active,
+    .active .nmh-lg-#{$name}-active,
+    .active .nma-lg-#{$name}-active,
+    .nml-lg-#{$name}-plus + .nml-lg-#{$name}-plus {
+      margin-left: -$value;
+    }
+
+    .nmb-lg-#{$name},
+    .nmv-lg-#{$name},
+    .nma-lg-#{$name},
+    .nmb-lg-#{$name}-hover:hover,
+    .nmv-lg-#{$name}-hover:hover,
+    .nma-lg-#{$name}-hover:hover,
+    .active .nmb-lg-#{$name}-active,
+    .active .nmv-lg-#{$name}-active,
+    .active .nma-lg-#{$name}-active, {
+      margin-bottom: -$value;
+    }
+
+    .nmr-lg-#{$name},
+    .nmh-lg-#{$name},
+    .nma-lg-#{$name},
+    .nmr-lg-#{$name}-hover:hover,
+    .nmh-lg-#{$name}-hover:hover,
+    .nma-lg-#{$name}-hover:hover,
+    .active .nmr-lg-#{$name}-active,
+    .active .nmh-lg-#{$name}-active,
+    .active .nma-lg-#{$name}-active,
+    .nmr-lg-#{$name}-plus + .nmr-lg-#{$name}-plus {
+      margin-right: -$value;
+    }
   }
 }
 
